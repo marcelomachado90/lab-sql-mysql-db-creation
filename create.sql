@@ -5,7 +5,7 @@ CREATE DATABASE IF NOT EXISTS lab_mysql;
 
 USE lab_mysql;
 
-#DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS cars;
 CREATE TABLE cars (car_id INT NOT NULL auto_increment,
 			vin VARCHAR (20) NOT NULL,
             brand VARCHAR (20) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE salespersons (salesperson_id INT AUTO_INCREMENT NOT NULL,
 CREATE TABLE invoices (invoice_id INT auto_increment NOT NULL,
 					invoice_number VARCHAR (20) NOT NULL,
                     invoice_date DATE NOT NULL,
-                    staff_id INT NOT NULL,
+                    staff_id INT ,
                     customer_id  INT NOT NULL,
                     car_id  INT NOT NULL,
                     salesperson_id INT,
